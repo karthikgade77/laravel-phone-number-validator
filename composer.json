@@ -1,0 +1,31 @@
+{
+    "name": "rockett/za-phone",
+    "description": "Parses and validates South African phone numbers.",
+    "keywords": ["phone-number", "south africa", "validator", "parser", "formatter", "laravel"],
+    "license": "ISC",
+    "authors": [
+        {
+            "name": "Mike Rockett",
+            "email": "mrockett@outlook.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.6.4",
+        "laravel/framework": "^5.4"
+    },
+    "require-dev": {
+        "orchestra/testbench": "~3.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Rockett\\Toolkit\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Rockett\\Toolkit\\Providers\\ZAPhoneServiceProvider"
+            ]
+        }
+    }
+}
